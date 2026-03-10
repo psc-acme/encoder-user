@@ -1,0 +1,41 @@
+{
+    "name": "psc-acme/encoder-user",
+    "description": "Package encoder-user for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\EncoderUser\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "vlucas/phpdotenv": "^5.0",
+        "symfony/serializer": "^7.0",
+        "psr/log": "^3.0",
+        "league/flysystem": "^3.0",
+        "doctrine/orm": "^3.0",
+        "symfony/filesystem": "^7.0"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^7.0",
+        "infection/infection": "^0.27"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
